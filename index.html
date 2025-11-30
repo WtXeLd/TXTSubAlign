@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TXTSubAlign - 音频文本对齐工具</title>
+    <title>TXTSubAlign</title>
     <style>
         * {
             margin: 0;
@@ -29,8 +29,8 @@
             margin-bottom: 30px;
             font-size: 32px;
             font-weight: 600;
-            border-bottom: 2px solid #ffffff;
-            padding-bottom: 20px;
+            /* border-bottom: 2px solid #ffffff; */
+            /* padding-bottom: 5px; */
         }
 
         /* 折叠面板样式 */
@@ -513,7 +513,7 @@
         .result-section h2 {
             font-size: 20px;
             margin-bottom: 20px;
-            color: #00ff00;
+            color: #ffffff;
         }
 
         .result-summary {
@@ -621,12 +621,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>TXTSubAlign - 音频文本对齐工具</h1>
+        <h1>TXTSubAlign</h1>
 
         <!-- 使用说明（可折叠） -->
         <div class="collapsible">
             <div class="collapsible-header" onclick="toggleCollapsible(this)">
-                <h3>📖 使用说明</h3>
+                <h3>使用说明</h3>
                 <span class="collapsible-icon">▼</span>
             </div>
             <div class="collapsible-content">
@@ -793,7 +793,7 @@
             <div class="result-summary" id="resultSummary"></div>
 
             <div>
-                <button class="download-all-btn" onclick="downloadAllFiles()">📥 下载所有字幕</button>
+                <button class="download-all-btn" onclick="downloadAllFiles()">下载所有字幕</button>
                 <button class="reset-btn" onclick="resetAll()">处理新文件</button>
                 <button class="clear-all-btn" onclick="clearHistory()" style="margin-left: 10px;">🗑 清空历史</button>
             </div>
