@@ -632,7 +632,7 @@
             <div class="collapsible-content">
                 <div class="collapsible-inner">
                     <ul>
-                        <li>支持混合上传音频和文本文件，系统会自动识别并分类到对应列表</li>
+                        <li>支持上传音频和文本文件，系统会自动识别并分类到对应列表</li>
                         <li>支持点击上传或拖拽文件到上传框，可以多次添加文件</li>
                         <li>重复文件会自动过滤，只添加新文件</li>
                         <li>上传后会自动按文件名排序</li>
@@ -648,15 +648,15 @@
 
         <!-- 文件管理区域 -->
         <div class="upload-section">
-            <h2>文件管理</h2>
+            <h2>文件导入</h2>
 
             <!-- 统一上传区域 -->
             <div style="margin-bottom: 20px;">
                 <div class="file-upload-box" id="mixedUploadBox">
-                    <label>混合上传音频和文本文件</label>
-                    <label for="mixedFiles" class="upload-btn">+ 添加文件 (支持 MP3/WAV/M4A/TXT)</label>
+                    <!-- <label>上传音频和文本</label> -->
+                    <label for="mixedFiles" class="upload-btn">+ 点击添加文件</label>
                     <input type="file" id="mixedFiles" accept=".mp3,.wav,.m4a,.txt" multiple onchange="handleMixedUpload(this)">
-                    <div class="drag-hint">或拖拽音频和文本文件到此区域，自动识别分类</div>
+                    <div class="drag-hint">或拖拽文件到此区域（支持 MP3/WAV/M4A/TXT）</div>
                 </div>
             </div>
 
