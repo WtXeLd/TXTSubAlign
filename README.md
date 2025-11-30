@@ -10,7 +10,7 @@
 - 支持多种字幕格式输出（SRT、ASS、JSON、TSV）
 - 实时显示处理进度
 
-<img width="2620" height="1810" alt="image" src="https://github.com/user-attachments/assets/857d399c-bfcc-42f9-8fd6-4ad4ff3dae29" />
+<img width="2395" height="1768" alt="image" src="https://github.com/user-attachments/assets/bb697fcc-5b70-40a7-baf4-30d3eaa57ab9" />
 
 ## 安装依赖
 
