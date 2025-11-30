@@ -8,8 +8,9 @@
 - 支持多种语言（中文、英文、日文、韩文等）
 - 可选择不同的模型大小（Tiny、Base、Small、Medium、Large）
 - 支持多种字幕格式输出（SRT、ASS、JSON、TSV）
-- 黑白简约 UI 设计
 - 实时显示处理进度
+
+<img width="2620" height="1810" alt="image" src="https://github.com/user-attachments/assets/857d399c-bfcc-42f9-8fd6-4ad4ff3dae29" />
 
 ## 安装依赖
 
