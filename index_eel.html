@@ -655,8 +655,8 @@
                 <div class="file-upload-box" id="mixedUploadBox">
                     <!-- <label>上传音频和文本</label> -->
                     <label for="mixedFiles" class="upload-btn">+ 点击添加文件</label>
-                    <input type="file" id="mixedFiles" accept=".mp3,.wav,.m4a,.flac,.txt" multiple onchange="handleMixedUpload(this)">
-                    <div class="drag-hint">或拖拽文件到此区域（支持 MP3/WAV/M4A/FLAC/TXT）</div>
+                    <input type="file" id="mixedFiles" accept=".mp3,.wav,.m4a,.txt" multiple onchange="handleMixedUpload(this)">
+                    <div class="drag-hint">或拖拽文件到此区域（支持 MP3/WAV/M4A/TXT）</div>
                 </div>
             </div>
 
@@ -730,7 +730,6 @@
                     <select id="outputFormat">
                         <option value="srt" selected>SRT</option>
                         <option value="ass">ASS</option>
-                        <option value="lrc">LRC (歌词)</option>
                         <option value="json">JSON</option>
                         <option value="tsv">TSV</option>
                     </select>
@@ -830,7 +829,7 @@
             const mixedBox = document.getElementById('mixedUploadBox');
 
             // 混合文件拖拽（支持音频和文本）
-            setupDragDrop(mixedBox, handleMixedDrop, ['.mp3', '.wav', '.m4a', '.flac', '.txt']);
+            setupDragDrop(mixedBox, handleMixedDrop, ['.mp3', '.wav', '.m4a', '.txt']);
         }
 
         // 设置拖拽功能
@@ -880,7 +879,7 @@
         // 处理混合文件拖拽放置（增量添加，自动识别）
         function handleMixedDrop(files) {
             // 定义音频和文本文件扩展名
-            const audioExtensions = ['.mp3', '.wav', '.m4a', '.flac'];
+            const audioExtensions = ['.mp3', '.wav', '.m4a'];
             const textExtensions = ['.txt'];
 
             // 分离音频和文本文件
@@ -930,7 +929,7 @@
             const files = Array.from(input.files);
 
             // 定义音频和文本文件扩展名
-            const audioExtensions = ['.mp3', '.wav', '.m4a', '.flac'];
+            const audioExtensions = ['.mp3', '.wav', '.m4a'];
             const textExtensions = ['.txt'];
 
             // 分离音频和文本文件

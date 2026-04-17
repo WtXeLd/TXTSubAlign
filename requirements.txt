@@ -1,3 +1,9 @@
+# Flask 版本依赖
 flask>=2.3.0
+
+# Eel 桌面版依赖
+Eel>=0.14.0
+
+# 核心依赖
 stable-ts>=2.13.0
 torch>=2.0.0
